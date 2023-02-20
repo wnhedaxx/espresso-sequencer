@@ -13,6 +13,9 @@ zkevm-node-background:
 demo:
     {{compose}} up -V --force-recreate --abort-on-container-exit
 
+hermez:
+	{{compose}} up -V --force-recreate --abort-on-container-exit -- zkevm-mock-l1-network zkevm-state-db zkevm-permissionless-node zkevm-aggregator zkevm-prover
+
 # This currently doesn't quite work yet, likely because the block number is zero
 # after anvil loads state.
 demo-anvil:

@@ -9011,6 +9011,7 @@ dependencies = [
  "clap 4.1.4",
  "contract-bindings",
  "ethers",
+ "rand_chacha 0.3.1",
  "sequencer",
  "tracing",
  "url",

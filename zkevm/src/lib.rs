@@ -3,7 +3,7 @@ use sequencer::{Vm, VmId, VmTransaction};
 
 pub mod hermez;
 
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, PartialEq)]
 pub struct EvmTransaction {
     tx: TypedTransaction,
     sig: Signature,

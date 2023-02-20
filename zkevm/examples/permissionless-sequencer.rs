@@ -41,6 +41,11 @@ use ethers::{
     signers::coins_bip39::English,
     utils::{format_ether, format_units},
 };
+use rand_chacha::{
+    rand_core::{RngCore, SeedableRng},
+    ChaChaRng,
+};
+use sequencer::VmTransaction;
 use std::time::Duration;
 use url::Url;
 use zkevm::{hermez::encode_transactions, EvmTransaction};
@@ -92,6 +97,10 @@ struct Options {
         default_value = "test test test test test test test test test test test junk"
     )]
     deployer_mnemonic: String,
+
+    /// Send some malformed transactions before some good transactions, to stress the executor.
+    #[clap(long)]
+    inject_bad_transactions: bool,
 }
 
 async fn force_batch<M: Middleware>(
@@ -254,6 +263,18 @@ async fn main() {
     tracing::info!("L2 transfer: {:?}", transfer);
     tracing::info!("Encoded: {}", transfer_bytes);
     tracing::info!("Hash: {:#x}", transfer_hash);
+
+    if opt.inject_bad_transactions {
+        // Sequence some garbage bytes which are not a valid EVM transaction, to see how the L2
+        // components handle it.
+        let mut garbage = transfer_bytes.to_vec();
+        ChaChaRng::from_entropy().fill_bytes(&mut garbage);
+        // Assert that the garbage bytes are not a valid transaction.
+        assert_eq!(EvmTransaction::decode(&garbage), None);
+        let garbage = garbage.into();
+        tracing::info!("forcing malformed transactions: {}", garbage);
+        force_batch(&rollup, garbage, matic_decimals as u32).await;
+    }
 
     // Force the transaction into a batch by sending it directly to the L1 rollup contract, as a
     // permissionless sequencer would.
