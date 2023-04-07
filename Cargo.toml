@@ -10,3 +10,9 @@ members = [
   "utils",
   "zkevm",
 ]
+
+[patch."https://github.com/EspressoSystems/hotshot"]
+hotshot = { git = "https:///github.com//EspressoSystems/hotshot", rev = "9cf5f5507b9653515499900c286d11abb3e5ce68" }
+hotshot-centralized-server = { git = "https:///github.com//EspressoSystems/hotshot", rev = "9cf5f5507b9653515499900c286d11abb3e5ce68" }
+hotshot-testing = { git = "https:///github.com//EspressoSystems/hotshot", rev = "9cf5f5507b9653515499900c286d11abb3e5ce68" }
+hotshot-types = { git = "https:///github.com//EspressoSystems/hotshot", rev = "9cf5f5507b9653515499900c286d11abb3e5ce68" }
