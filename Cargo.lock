@@ -4165,7 +4165,7 @@ dependencies = [
 [[package]]
 name = "hotshot"
 version = "0.3.3"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "ark-bls12-381",
  "ark-ec",
@@ -4193,7 +4193,7 @@ dependencies = [
  "hotshot-consensus",
  "hotshot-orchestrator",
  "hotshot-types",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "hotshot-web-server",
  "itertools 0.10.5",
  "jf-primitives",
@@ -4217,7 +4217,7 @@ dependencies = [
 [[package]]
 name = "hotshot-centralized-server"
 version = "0.1.1"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "async-compatibility-layer",
  "async-std",
@@ -4226,7 +4226,7 @@ dependencies = [
  "commit 0.2.2",
  "futures",
  "hotshot-types",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "libp2p-core 0.39.1",
  "libp2p-identity",
  "serde",
@@ -4239,7 +4239,7 @@ dependencies = [
 [[package]]
 name = "hotshot-consensus"
 version = "0.1.0"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "async-compatibility-layer",
  "async-lock",
@@ -4248,10 +4248,11 @@ dependencies = [
  "bincode",
  "commit 0.2.2",
  "custom_debug",
+ "derivative",
  "either",
  "futures",
  "hotshot-types",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "snafu",
  "time 0.3.20",
  "tracing",
@@ -4260,7 +4261,7 @@ dependencies = [
 [[package]]
 name = "hotshot-orchestrator"
 version = "0.1.1"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "async-compatibility-layer",
  "async-lock",
@@ -4271,7 +4272,7 @@ dependencies = [
  "commit 0.1.0",
  "futures",
  "hotshot-types",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "libp2p",
  "libp2p-core 0.37.0",
  "libp2p-networking",
@@ -4316,7 +4317,7 @@ dependencies = [
 [[package]]
 name = "hotshot-testing"
 version = "0.1.0"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "ark-bls12-381",
  "async-compatibility-layer",
@@ -4329,7 +4330,7 @@ dependencies = [
  "hotshot",
  "hotshot-consensus",
  "hotshot-types",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "jf-primitives",
  "rand 0.8.5",
  "serde",
@@ -4340,7 +4341,7 @@ dependencies = [
 [[package]]
 name = "hotshot-types"
 version = "0.1.0"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "arbitrary",
  "ark-serialize",
@@ -4360,7 +4361,7 @@ dependencies = [
  "espresso-systems-common 0.4.1",
  "futures",
  "hex_fmt",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "libp2p-networking",
  "nll",
  "rand 0.8.5",
@@ -4383,7 +4384,7 @@ dependencies = [
 [[package]]
 name = "hotshot-utils"
 version = "0.1.0"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "bincode",
 ]
@@ -4391,7 +4392,7 @@ dependencies = [
 [[package]]
 name = "hotshot-web-server"
 version = "0.1.1"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "ark-bls12-381",
  "async-compatibility-layer",
@@ -4402,7 +4403,7 @@ dependencies = [
  "commit 0.1.0",
  "futures",
  "hotshot-types",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "jf-primitives",
  "libp2p-core 0.37.0",
  "nll",
@@ -5459,7 +5460,7 @@ dependencies = [
 [[package]]
 name = "libp2p-networking"
 version = "0.1.0"
-source = "git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68#9cf5f5507b9653515499900c286d11abb3e5ce68"
+source = "git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment#12810c0f7ff6e8871dfc0fd40eb6b616e4284d9c"
 dependencies = [
  "async-compatibility-layer",
  "async-lock",
@@ -5472,7 +5473,7 @@ dependencies = [
  "derive_builder",
  "either",
  "futures",
- "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?rev=9cf5f5507b9653515499900c286d11abb3e5ce68)",
+ "hotshot-utils 0.1.0 (git+https://github.com//EspressoSystems/hotshot?branch=fix/parent-commitment)",
  "libp2p",
  "libp2p-identity",
  "libp2p-swarm-derive",
