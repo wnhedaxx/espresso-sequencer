@@ -61,3 +61,10 @@ typenum = { version = "1.15.0", default-features = false, features = [
     "no_std",
 ] }
 url = "2.3"
+
+[target.'cfg(not(target_env = "msvc"))'.dependencies]
+tikv-jemallocator = "0.5"
+tikv-jemalloc-sys = { version = "0.5.4+5.3.0-patched", features = ["profiling"] }
+
+[profile.release]
+debug = true

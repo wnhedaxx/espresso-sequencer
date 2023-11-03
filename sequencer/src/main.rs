@@ -11,6 +11,13 @@ use sequencer::{
     init_node, init_static, Block, NetworkParams, Options,
 };
 
+#[cfg(not(target_env = "msvc"))]
+use tikv_jemallocator::Jemalloc;
+
+#[cfg(not(target_env = "msvc"))]
+#[global_allocator]
+static GLOBAL: Jemalloc = Jemalloc;
+
 #[async_std::main]
 async fn main() {
     setup_logging();
