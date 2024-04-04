@@ -1,0 +1,12 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "# Run a node natively target/release/sequencer [options] -- <module>   # Run a node with the sequencer docker image docker run -it \\   --name sequencer1 \\   -e <env_variable> \\   ghcr.io/espressosystems/espresso-sequencer/sequencer:main \\   sequencer [options] -- <module>",
+      "name": "# Run a node natively target/release/sequencer [options] -- <module>   # Run a node with the sequencer docker image docker run -it \\   --name sequencer1 \\   -e <env_variable> \\   ghcr.io/espressosystems/espresso-sequencer/sequencer:main \\   sequencer [options] -- <module>"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {}
+}
