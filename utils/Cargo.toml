@@ -11,7 +11,7 @@ ark-serialize = { version = "0.4", features = ["derive"] }
 async-std = { workspace = true }
 commit = { git = "https://github.com/EspressoSystems/commit" }
 contract-bindings = { path = "../contract-bindings" }
-ethers = "2.0.4"
+ethers = "2.0.14"
 portpicker = "0.1.1"
 surf = "2.3.2"
 tempfile = "3.9.0"
